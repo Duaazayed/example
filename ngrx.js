@@ -49,7 +49,7 @@ console.log(name, uppercaseName);
 
 const character ={name: 'duaa'};
 const updateCharacter ={character,role: 'programmer'}
-Console.log(character); //result will be name: ‘duaa’
-Console.log(updateCharacter); //result will be name:’duaa’, role:’programmer’}
+console.log(character); //result will be name: ‘duaa’
+console.log(updateCharacter); //result will be name:’duaa’, role:’programmer’}
 
 
