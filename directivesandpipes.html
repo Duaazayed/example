@@ -1,0 +1,35 @@
+<p> ngIf</p>
+<div *ngIf="isUserLoggedIn">Welcome, User!</div>
+
+<p> ngFor</p>
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+<p> ngClass</p>
+<div [ngClass]="{'highlighted': isHighlighted, 'bold-text': isBold}">Dynamic Styling</div>
+
+
+<p> ngSwitch</p>
+<div [ngSwitch]="userRole">
+  <div *ngSwitchCase="'admin'">Admin Content</div>
+  <div *ngSwitchCase="'user'">User Content</div>
+  <div *ngSwitchDefault>Guest Content</div>
+</div>
+
+
+<p> Example of DatePipe </p>
+
+<p>{{ currentDate | date: 'medium' }}</p>
+
+<p> Example of CurrencyPipe</p>
+
+<p>{{ productPrice | currency: 'USD' }}</p>
+
+<p> Example of UpperCasePipe and LowerCasePipe</p>
+
+<p>{{ productName | uppercase }}</p>
+
+
+<p>  DecimalPipe</p>
+
+<p>{{ orderTotal | number: '1.2-2' }}</p>
